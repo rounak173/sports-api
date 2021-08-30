@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!-- BOOTSTRAP LINK  -->
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <style>
+        #results{
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+        .card{
+            border-radius: 10px;
+            border: 4px solid tomato;
+            padding: 5px;
+            margin: 5px;
+        }
+        #results .card{
+            cursor: pointer;
+        }
+        #error-msg{
+            display:none;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h1 class="my-5 text-center fw-bold">The Sports DB</h1>
+
+    <!-- SEARCH BAR  -->
+    <div class="input-group mb-3 w-50 mx-auto">
+        <input id="search-field" type="text" class="form-control" placeholder="team name" aria-label="team name"
+            aria-describedby="button-addon2">
+        <button class="btn btn-outline-secondary" type="button" onclick="results()">Button</button>
+    </div>
+
+    <!-- ERROR MESSAGE  -->
+    <div id="error-msg" class="text-center mt-5">
+        <h1>No search result. Please search again.</h1>
+    </div>
+
+    <!-- DETAILS  -->
+    <div id="details">
+    </div>
+
+    <!-- RESULTS  -->
+    <div id="results">
+    </div>
+
+    <!-- CUSTOM JS  -->
+    <script src="assets/js/app.js"></script>
+
+    <!-- BOOTSTRAP JS  -->
+    <script src="assets/js/bootstrap.bundle.js"></script>
+</body>
+
+</html>
